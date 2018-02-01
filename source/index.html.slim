@@ -1,0 +1,102 @@
+section.section
+  .container
+    .tile.is-ancestor
+      .tile.is-vertical.is-8
+        .tile
+          .tile.is-parent.is-vertical
+            article.tile.is-child.notification.is-dark
+              a.entire href='http://homeassistant/'
+                p.title Home Assistant
+
+            article.tile.is-child.notification.is-info
+              a.entire href='http://plex/'
+                p.title Plex
+                span.tag.is-white = data.auth.plex.login
+                span.tag.is-dark = data.auth.plex.login
+
+          .tile.is-parent.is-vertical
+            article.tile.is-child.notification.is-info
+              a.entire href='http://netflix.com'
+                p.title Netflix
+                p
+                  span.tag.is-white = data.auth.netflix.login
+                  span.tag.is-dark = data.auth.netflix.login
+                br
+                p flixable.com
+
+            article.tile.is-child.notification.is-info
+              a.entire href='http://hulu.com'
+                p.title Hulu
+                span.tag.is-white = data.auth.hulu.login
+                span.tag.is-dark = data.auth.hulu.login
+
+        .tile
+          .tile.is-parent.is-vertical
+            article.tile.is-child.notification.is-info
+              a.entire href='http://comcast/'
+                p.subtitle.is-4 Comcast
+                span.tag.is-white = data.auth.comcast.login
+                span.tag.is-dark = data.auth.comcast.login
+
+            article.tile.is-child.notification.is-info
+              a.entire href='http://primevideo.com/'
+                p.subtitle.is-4 Amazon Video
+
+            article.tile.is-child.notification.is-info
+              a.entire href='http://flixable.com/'
+                p.subtitle.is-4 Flixable
+
+            article.tile.is-child.notification.is-info
+              a.entire href='http://plex:33400/'
+                p.subtitle.is-4 Plex WebTools
+
+          .tile.is-parent.is-vertical
+            article.tile.is-child.notification.is-success
+              a.entire href='http://play.google.com/music/'
+                p.subtitle.is-4 Google Music
+
+            article.tile.is-child.notification.is-success
+              a.entire href='http://listenonrepeat.com'
+                p.subtitle.is-4 ListenOnRepeat
+
+            article.tile.is-child.notification.is-success
+              a.entire href='http://subsonic/'
+                p.subtitle.is-4 SubSonic
+
+      .tile.is-parent.is-vertical
+        // Downloading
+        article.tile.is-child.notification.is-light
+          a.entire href="http://couchpotato/"
+            .is-pulled-right
+              span.tag.is-white = data.auth.couchpotato.login
+              span.tag.is-dark = data.auth.couchpotato.password
+            p.subtitle CouchPotato
+        article.tile.is-child.notification.is-light
+          a.entire href="http://headphones/"
+            p.subtitle Headphones
+        article.tile.is-child.notification.is-light
+          a.entire href="http://lazylibrarian/"
+            p.subtitle Lazy Librarian
+        article.tile.is-child.notification.is-light
+          a.entire href="http://nzbhydra/"
+            p.subtitle NZBHydra
+        article.tile.is-child.notification.is-light
+          a.entire href="http://sickrage/"
+            p.subtitle Sickrage
+        article.tile.is-child.notification.is-light
+          a.entire href="http://sabnzbd/"
+            p.subtitle Sabnzbd
+
+        // Monitoring
+        article.tile.is-child.notification.is-dark
+          a.entire href="http://backups/"
+            p.subtitle Backups
+        article.tile.is-child.notification.is-dark
+          a.entire href="http://modem/"
+            p.subtitle Modem
+        article.tile.is-child.notification.is-dark
+          a.entire href="http://router/"
+            p.subtitle Router
+        article.tile.is-child.notification.is-dark
+          a.entire href="http://unifi/"
+            p.subtitle Wireless

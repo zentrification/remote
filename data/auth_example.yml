@@ -1,0 +1,15 @@
+comcast:
+  login: mylogin
+  password: mypassword
+couchpotato:
+  login: mylogin
+  password: mypassword
+hulu:
+  login: mylogin
+  password: mypassword
+netflix:
+  login: mylogin
+  password: mypassword
+plex:
+  login: mylogin
+  password: mypassword
