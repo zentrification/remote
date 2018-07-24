@@ -10,4 +10,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     };
   }
 
+  for (var element of document.querySelectorAll('[data-url]')) {
+    element.onclick = function(e) {
+      e.preventDefault();
+      window.location = this.getAttribute('data-url');
+    };
+  }
+
 });
+
+window.screenshot = function() {
+  for (var element of document.getElementsByClassName('tag')) {
+    if (element.className == 'tag is-white') {
+      element.innerHTML = 'Username';
+    }
+    if (element.className == 'tag is-dark') {
+      element.innerHTML = 'Password';
+    }
+  }
+}

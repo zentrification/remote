@@ -14,3 +14,20 @@ a.button.is-fullwidth + a.button.is-fullwidth
 .clipboard
   position: absolute
   top: -10em
+
+.tags
+  padding-top: 1rem
+  +desktop
+    position: absolute
+    bottom: 1.25rem
+    left: 1.25rem
+
+
+//
+  .tag:not(.is-medium),
+  .tag.is-white
+    color: transparent !important
+    text-shadow: 0 0 15px #000
+  .tag.is-dark
+    color: transparent !important
+    text-shadow: 0 0 15px #fff

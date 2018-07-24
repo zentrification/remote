@@ -9,35 +9,39 @@ section.section
             a.tile.is-child.notification.is-dark href='http://homeassistant/'
               p.title Home Assistant
 
-            a.tile.is-child.notification.is-info href='http://plex/'
-              p.title Plex
-              span.tag.is-white = data.auth.plex.login
-              span.tag.is-dark = data.auth.plex.password
-
           .tile.is-parent.is-vertical
             a.tile.is-child.notification.is-info href='http://netflix.com'
               p.title Netflix
               span.tag.is-white = data.auth.netflix.login
               span.tag.is-dark = data.auth.netflix.password
+              .tags
+                span.tag.is-link.is-medium data-url='http://bateflix.com/' Bateflix
+                span.tag.is-link.is-medium data-url='http://flixable.com/' Flixable
 
-            a.tile.is-child.notification.is-info href='http://hulu.com'
-              p.title Hulu
-              span.tag.is-white = data.auth.hulu.login
-              span.tag.is-dark = data.auth.hulu.password
+            a.tile.is-child.notification.is-info href='http://plex/'
+              p.title Plex
+              span.tag.is-white = data.auth.plex.login
+              span.tag.is-dark = data.auth.plex.password
+              .tags
+                span.tag.is-link.is-medium data-url='http://plex:33400/' WebTools
 
         .tile
           .tile.is-parent.is-vertical
             // Video
+            a.tile.is-child.notification.is-info href='http://primevideo.com/'
+              p.subtitle.is-4 Amazon Video
             a.tile.is-child.notification.is-info href='http://comcast/'
               p.subtitle.is-4 Comcast
               span.tag.is-white = data.auth.comcast.login
               span.tag.is-dark = data.auth.comcast.password
-            a.tile.is-child.notification.is-info href='http://primevideo.com/'
-              p.subtitle.is-4 Amazon Video
-            a.tile.is-child.notification.is-info href='http://flixable.com/'
-              p.subtitle.is-4 Flixable
-            a.tile.is-child.notification.is-info href='http://plex:33400/'
-              p.subtitle.is-4 Plex WebTools
+            a.tile.is-child.notification.is-info href='http://hulu.com'
+              p.title.is-4 Hulu
+              span.tag.is-white = data.auth.hulu.login
+              span.tag.is-dark = data.auth.hulu.password
+            a.tile.is-child.notification.is-info href='https://instantwatcher.com/'
+              p.subtitle.is-4 Instant Watcher
+            a.tile.is-child.notification.is-info href='https://tv.youtube.com/'
+              p.subtitle.is-4 Youtube TV
 
           .tile.is-parent.is-vertical
             // Music
@@ -45,6 +49,8 @@ section.section
               p.subtitle.is-4 Google Music
             a.tile.is-child.notification.is-success href='http://listenonrepeat.com'
               p.subtitle.is-4 ListenOnRepeat
+            a.tile.is-child.notification.is-success href='http://spotify.com/'
+              p.subtitle.is-4 Spotify
             a.tile.is-child.notification.is-success href='http://subsonic/'
               p.subtitle.is-4 SubSonic
 
@@ -68,6 +74,8 @@ section.section
 
         // Services
         a.tile.is-child.notification.is-dark href="http://pihole/admin/"
+          .is-pulled-right
+            span.tag.is-white = data.auth.pihole.password
           p.subtitle Ad Blocking
         a.tile.is-child.notification.is-dark href="http://backups/"
           p.subtitle Backups
